@@ -1,0 +1,78 @@
+<html>
+    <head> 
+        <title>SMS PROJECT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <style>
+            body{
+                font: 15px/1.5 Arial, Helretica,sans-serif;
+                padding: 0px;
+                background-color: #f4f5e7;
+            }
+            .container{
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header{
+                background: #03A9F4;
+                border-bottom: #448AFF;
+                height: 120px;
+                width: 100%;
+                padding-top: 30px;
+            }
+            .main_header{
+                text-align: center;
+                background: blue;
+                height: 100px;
+                width: 100%;
+                margin: 0px;
+            }
+            #brandname{
+                float: left;
+                font-size: 30px;
+                color: #fff;
+                margin: 10px;
+            }
+            a{
+                color: #fff;
+            }
+            
+            .results{
+                border: 15px 50px;
+                background: #345fe4;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+            }
+           
+            </style>
+            </head>
+            <body>
+                <header>
+                    <div class="container">
+                        <div id="brandname">
+                            <a href="/s">SMS Spam Detector</div></a>
+                        </div>
+                    </div>
+                </header>
+               
+                <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="comment">Enter Your Message</label>
+                    <textarea class="form-control" rows="5" id="comment" name="Text" required></textarea>
+                </div>
+                <button type='Submit'  class="btn btn-primary">Submit</button>
+                </form>
+                
+               
+            </body>
+            
+        </style>
+    </head>    
+</html>

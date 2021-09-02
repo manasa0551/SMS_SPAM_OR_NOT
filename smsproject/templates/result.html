@@ -1,0 +1,82 @@
+<html>
+    <head> 
+        <title>SMS PROJECT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <style>
+            body{
+                font: 15px/1.5 Arial, Helretica,sans-serif;
+                padding: 0px;
+                background-color: #f4f5e7;
+            }
+            .container{
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header{
+                background: #03A9F4;
+                border-bottom: #448AFF;
+                height: 120px;
+                width: 100%;
+                padding-top: 30px;
+            }
+            .main_header{
+                text-align: center;
+                background: blue;
+                height: 100px;
+                width: 100%;
+                margin: 0px;
+            }
+            #brandname{
+                float: left;
+                font-size: 30px;
+                color: #fff;
+                margin: 10px;
+            }
+            
+            
+            .results{
+                border: 15px 50px;
+                background: #345fe4;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+            }
+            a{
+                color: rgb(255, 254,254);
+            }
+           
+        </style>
+            </head>
+            <body>
+                <header>
+                    <div class="container">
+                        <div id="brandname">
+                            <a href="/" text-align='center'>SMS Spam Detector</div></a>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="container">
+                    <h1 style="color:rgb(145,255,0);font-size:20;text-align: center;">
+                        <b>Results:</b>
+                    </h1>
+                    <div class="results">
+                        {% if prediction == 1 %}
+                        <h2 style="color:red;">Spam</h2>
+                        {% elif prediction == 0 %}
+                        <h2 style="color:blue;">Not a Spam</h2>
+                        {% endif %}
+                    </div>                        
+                </div>              
+            </body>
+            
+        </style>
+    </head>    
+</html>
